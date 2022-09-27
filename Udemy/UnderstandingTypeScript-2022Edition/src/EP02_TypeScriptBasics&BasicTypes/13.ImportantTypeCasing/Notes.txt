@@ -1,0 +1,14 @@
+Important: Type Casing
+In TypeScript, you work with types like string or number all the times.
+
+Important: It is string and number (etc.), NOT String, Number etc.
+
+The core primitive types in TypeScript are all lowercase!
+
+
+重要：類型外殼
+在 TypeScript 中，您始終使用字符串或數字等類型。
+
+重要提示：它是字符串和數字（等），而不是字符串、數字等。
+
+TypeScript 中的核心原始類型都是小寫的！

@@ -1,0 +1,2 @@
+npm init        導入 npm管理服務
+npm install -p  開發依賴，意思為只有本地開發及測試環境才需要的套件

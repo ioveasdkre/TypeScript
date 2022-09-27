@@ -1,0 +1,8 @@
+input表單無論宣告任何型別，或取得值都是 字串類型
+
+在 JavaScript需要設定判斷式作處理，才能設計只傳入指定型別的參數
+在 TypeScript不需要做判斷處理，省下更多程式碼
+
+cmd
+tsc fileName.ts 指定 ts檔轉換成 js
+tsc --init   專案底下所有 ts檔轉換成 js

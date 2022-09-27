@@ -1,0 +1,3 @@
+typeof 'Max' => 'string' 和 const name: string = '...'的差別
+
+JS 類型在運行時檢查，TS 類型在編譯期間檢查。

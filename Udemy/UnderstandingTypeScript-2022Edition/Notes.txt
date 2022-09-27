@@ -1,0 +1,19 @@
+安裝環境
+TypeScript
+https://www.typescriptlang.org/
+
+Node(必要)
+https://nodejs.org/en/
+
+cmd
+npm install typescript --save-dev -g
+
+
+社群
+Join the Academind Community on Discord!
+https://academind.com/community
+
+
+cmd
+tsc fileName.ts 指定 ts檔轉換成 js
+tsc -w      專案底下所有 ts檔轉換成 js

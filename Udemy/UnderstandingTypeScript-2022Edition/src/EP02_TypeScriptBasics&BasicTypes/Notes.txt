@@ -1,0 +1,5 @@
+11.UsingTypes                           使用類型
+12.TypeScriptTypesVsJavaScriptTypes     TypeScript 類型與 JavaScript 類型
+13.ImportantTypeCasing                  重要的選擇
+14.WorkingwithNumbers,Strings&Booleans  使用數字，字符串布爾值
+15.TypeAssignment&TypeInference         類型分配類型推理
