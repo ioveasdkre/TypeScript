@@ -1,0 +1,23 @@
+假設你有這個 JavaScript對象：
+const product = {
+  id: 'abc1',
+  price: 12.99,
+  tags: ['great-offer', 'hot-and-new'],
+  details: {
+    title: 'Red Carpet',
+    description: 'A great carpet - almost brand-new!'
+  }
+}
+
+這將是此類對象的類型：
+{
+  id: string;
+  price: number;
+  tags: string[];
+  details: {
+    title: string;
+    description: string;
+  }
+}
+
+因此，可以這麼說，您在物件類型中有一個物件類型。

@@ -5,7 +5,7 @@ Join Our Learning Community
 https://discord.com/invite/gxvEWGU
 
 
-npm init
+npm i
 npm start
 
 EP02開始

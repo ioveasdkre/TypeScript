@@ -1,5 +1,10 @@
-11.UsingTypes                           使用類型
-12.TypeScriptTypesVsJavaScriptTypes     TypeScript 類型與 JavaScript 類型
-13.ImportantTypeCasing                  重要的選擇
-14.WorkingwithNumbers,Strings&Booleans  使用數字，字符串布爾值
-15.TypeAssignment&TypeInference         類型分配類型推理
+TypeScript的類型判別分為兩種
+一種為系統自行幫你判定
+一種為顯示賜與類型
+
+Enum 枚舉只存在於 TypeScript
+盡可能避免 any類型，因為它讓你失去使用 TypeScript給你的優點
+
+自定義 類型別名或 聯合類型別名
+type a = number | string;
+type b = "as-number" | "as-text";
