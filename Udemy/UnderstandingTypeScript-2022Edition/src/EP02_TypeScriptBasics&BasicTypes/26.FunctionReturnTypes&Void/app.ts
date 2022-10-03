@@ -3,9 +3,9 @@ function add26(n1: number, n2: number): number {
     return n1 + n2;
 }
 
-function printResult(num: number): void {
+function printResult26(num: number): void {
     console.log("Result: ", num);
 }
 
-printResult(add26(5, 12));
-console.log(printResult(add26(5, 12))); // undefined
+printResult26(add26(5, 12));
+console.log(printResult26(add26(5, 12))); // undefined

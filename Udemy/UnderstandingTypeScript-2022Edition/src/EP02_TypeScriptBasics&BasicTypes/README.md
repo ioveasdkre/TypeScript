@@ -14,3 +14,13 @@
 24.TypeAliasesCustomTypes               自定義 類型別名或 聯合類型別名
 25.TypeAliases&ObjectTypes              類型別名物件類型
 26.FunctionReturnTypes&Void             方法返回類型和 void
+27.FunctionsasTypes                     作為類型的函數
+28.FunctionTypes&Callbacks              函數類型和回調
+29.TheUnknownType                       未知類型
+30.TheNeverType                         永不類型 遠永不存在的值
+
+TypeScript官方參考：
+https://www.typescriptlang.org/docs/handbook/2/everyday-types.html
+
+範例資源：
+https://www.udemy.com/course/understanding-typescript/learn/lecture/16888118#content
