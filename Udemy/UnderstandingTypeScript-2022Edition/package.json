@@ -1,7 +1,7 @@
 {
   "name": "understandingtypescript-2022edition",
   "version": "1.0.0",
-  "description": "EP01_GettingStarted                 入門\r EP02_TypeScriptBasics&BasicTypes    TypeScript基礎和基本類型",
+  "description": "TypeScript學習",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

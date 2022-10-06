@@ -1,0 +1,106 @@
+tsc -w 嚴密監控
+tsc init ts初始化設定
+
+
+tsconfig.json設定 ts
+exclude 不進行編譯的路徑
+include 編譯路徑
+files   單一檔案輸出路徑
+
+tsconfig.json/compilerOptions內的設定
+Projects(項目):
+incremental                             TS編譯器在第一次編譯之後會生成一個存儲編譯信息的文件，第二次編譯會在第一次的基礎上進行增量編譯，可以提高編譯的速度
+composite                               啟用允許 TypeScript 項目與項目引用一起使用的約束, 需和 declaration一起啟用，不可單獨啟用
+tsBuildInfoFile                         增量編譯文件的存儲位置，默認為 tsconfig.tsbuildinfo
+disableSourceOfProjectReferenceRedirect 禁用源(瀏覽器 sourceMap)項目引用重定向
+disableSolutionSearching                禁用解決方案搜索
+disableReferencedProjectLoad            禁用引用的項目加載. ts預設會自動將可能使用的項目家載到內存中 項目龐大時可使用此選項
+
+Language and Environment(語言與環境):
+target                                  設定要輸出的 js版本(ES)
+lib                                     編譯需要引入的特定函式庫檔案, 預設為 target輸入的版本
+jsx                                     指定 jsx 代碼的生成: preserve, react-native, or react
+experimentalDecorators                  啟用裝飾器. 裝飾器是一種尚未完全被 JavaScript 規範認可的語言特性
+emitDecoratorMetadata                   為裝飾器提供元數據的支持 啟用對與模塊一起使用的裝飾器發出類型元數據的實驗性支持reflect-metadata。
+jsxFactory                              .js使用經典 JSX 運行時編譯 JSX Elements 時更改文件中調用的函數
+jsxFragmentFactory                      指定 JSX 片段工廠函數以在指定jsxFactory編譯器選項的 react JSX 發射時使用
+jsxImportSource                         聲明用於在使用 as或TypeScript 4.1 中引入時導入jsx和jsxs工廠函數的模塊說明符
+reactNamespace                          改為使用jsxFactory。指定針對TSX 文件createElement時調用的對象。react
+noLib                                   禁用任何庫文件的自動包含。如果設置了此選項，lib則忽略。
+useDefineForClassFields                 發出符合 ECMAScript 標準的類字段。
+moduleDetection                         模塊檢測, "auto" or "legacy" or "force", 詳細請參官方
+
+Modules(模組選項):
+rootDir                                 編譯路徑
+moduleResolution                        模塊分辨率, 'node' or 'node16' or 'classic', 詳細請參官方
+baseUrl                                 用於解析非相對模組名稱的基目錄
+paths                                   模組名到基於 baseUrl 的路徑映射的列表
+rootDirs                                根文件夾列表，其組合內容表示項目運行時的結構內容
+typeRoots                               包含類型聲明的文件列表
+types                                   需要包含的類型聲明文件名列表
+allowUmdGlobalAccess                    允許您從模塊文件內部訪問作為全局變量的 UMD 導出
+moduleSuffixes                          提供一種在解析模塊時覆蓋要搜索的默認文件名後綴列表的方法
+resolveJsonModule                       啟用導入 .json 文件
+noResolve                               將檢查初始文件集import和<reference指令，並將這些已解析的文件添加到您的程序中
+
+JavaScript Support(JavaScript 支持):
+allowJs                                 允許編譯 js文件
+checkJs                                 報告 js文件中的錯誤
+maxNodeModuleJsDepth                    node_modules搜索和加載 JavaScript 文件的最大依賴深度
+
+Emit(輸出):
+declaration                             生成相應的 .d.ts文件( 如果你需要把項目作為一個庫發布給其他人 你需要一個基本的清單文件來描述你的項目中所有類型)                  
+declarationMap                          生成宣告檔案的 sourceMap
+emitDeclarationOnly                     只發出.d.ts文件；不發出.js文件。
+sourceMap                               生成相應的 .map文件(ts在瀏覽器無法偵錯，需開啟才能查看 ts內容而非 js)
+outFile                                 將輸出文件合併為一個 js文件. 如果 declaration為真，還指定一個捆綁所有 .d.ts 輸出的文件
+outDir                                  輸出路徑
+removeComments                          編譯成 js移除任何在 ts寫的註解
+noEmit                                  不產生輸出檔案 例如 js
+importHelpers                           從 tslib 導入輔助工具函數
+importsNotUsedAsValues                  為僅用於類型的導入指定發出/檢查行為, "remove import" or "preserve" or "error", 詳細請參官方
+downlevelIteration                      產生支援舊版本的 js, 一般情況下不會使用 因會產生更多的程式碼, 只有在編譯有問題的情況下才會使用
+sourceRoot                              指定調試器應該找到 TypeScript 文件而不是源文件的位置
+mapRoot                                 指定調試器應該找到映射文件而不是生成文件的位置
+inlineSourceMap                         生成單個 soucemaps 文件，而不是將 sourcemaps 生成不同的文件
+inlineSources                           將代碼與 sourcemaps 生成到一個文件中，要求同時設置了 --inlineSourceMap 或 --sourceMap 屬性
+emitBOM                                 控制 TypeScript在寫入輸出文件時是否會發出字節順序標記 (BOM) 
+newLine                                 指定發出文件時要使用的行尾序列：'CRLF' (dos) 或 'LF' (unix)
+stripInternal                           禁止發出在其 JSDoc 註釋中包含“@internal”的聲明。
+noEmitHelpers                           禁用在編譯輸出中生成自定義幫助函數，如“__extends”。
+noEmitOnError                           ts編譯發生錯誤 不會輸出任何檔案
+preserveConstEnums                      不要刪除 const enum生成代碼中的聲明
+declarationDir                          指定生成的聲明文件的輸出目錄。
+preserveValueImports                    在 JavaScript 輸出中保留未使用的導入值，否則這些值將被刪除。
+
+Interop Constraints(互操作約束):
+isolatedModules                         將每個文件做為單獨的module（與 'ts.transpileModule' 類似）.
+allowSyntheticDefaultImports            允許從沒有設置默認導出的模組中默認導入。
+esModuleInterop                         兼容模組導入的方式
+preserveSymlinks                        禁用解析符號鏈接到他們的真實路徑。 這與節點中的相同標誌相關。
+forceConsistentCasingInFileNames        確保檔案的大小寫一致
+
+Type Checking(類型檢查):
+strict                                  啟用所有嚴格類型檢查選項
+noImplicitAny                           在表達式和聲明上有隱含的 any類型時報錯
+strictNullChecks                        啟用嚴格的 null 檢查
+strictFunctionTypes                     檢查繼承和 class
+strictBindCallApply                     啟用對 bind, call, apply 更嚴格的型別檢查
+strictPropertyInitialization            啟用 class實例属性的賦值檢查
+noImplicitThis                          當 this 表達式值為 any 類型的時候，生成一個錯誤
+useUnknownInCatchVariables              默認 catch 子句變量為“未知”而不是“任何”。
+alwaysStrict                            以嚴格模式檢查每個 module，並在每個文件裡加入 'use strict'
+noUnusedLocals                          有未使用的區域變數時，拋出錯誤
+noUnusedParameters                      有未使用的參數時，拋出錯誤
+exactOptionalPropertyTypes              將可選屬性類型解釋為書面形式，而不是添加“未定義”。
+noImplicitReturns                       function裡的代碼 並非都有返回值時，拋出錯誤
+noFallthroughCasesInSwitch              報告 switch 語句的 fallthrough 錯誤。 （即，不允許 switch 的 case 語句貫穿(忘記使用 break時)）
+noUncheckedIndexedAccess                檢查 index signature 屬性是否是undefined
+noImplicitOverride                      確保派生類中的覆蓋成員使用覆蓋修飾符進行標記
+noPropertyAccessFromIndexSignature      對使用索引類型聲明的鍵強制使用索引訪問器
+allowUnusedLabels                       禁用未使用標籤的錯誤報告
+allowUnreachableCode                    禁用無法訪問代碼的錯誤報告
+
+Completeness(完整性):
+skipDefaultLibCheck                     跳過 TypeScript 中包含的類型檢查 .d.ts 文件
+skipLibCheck                            不會檢查引入的函式庫檔案

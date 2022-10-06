@@ -1,0 +1,1 @@
+console.log("tsconfig.json設定 include編譯此檔案");

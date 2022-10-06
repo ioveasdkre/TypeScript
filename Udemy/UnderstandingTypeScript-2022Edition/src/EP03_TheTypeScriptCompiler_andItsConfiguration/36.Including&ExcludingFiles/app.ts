@@ -1,0 +1,1 @@
+console.log("tsconfig.json設定 exclude過濾此文件不進行編譯成 js");

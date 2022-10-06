@@ -2,11 +2,17 @@
 TypeScript
 https://www.typescriptlang.org/
 
+cmd
+npm install typescript --save-dev -g
+
+
 Node(必要)
 https://nodejs.org/en/
 
-cmd
-npm install typescript --save-dev -g
+
+vs Code套件
+ESLint                      檢查語法
+Prettier - Code formatter   自動格式化
 
 
 社群
@@ -16,4 +22,4 @@ https://academind.com/community
 
 cmd
 tsc fileName.ts 指定 ts檔轉換成 js
-tsc -w      專案底下所有 ts檔轉換成 js
+tsc -w          當層資料夾底下所有 ts檔轉換成 js
