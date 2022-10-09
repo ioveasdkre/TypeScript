@@ -1,6 +1,8 @@
 tsc -w 嚴密監控
 tsc init ts初始化設定
 
+tsconfig.json官方介紹
+https://www.typescriptlang.org/tsconfig
 
 tsconfig.json設定 ts
 exclude 不進行編譯的路徑
@@ -90,6 +92,8 @@ strictPropertyInitialization            啟用 class實例属性的賦值檢查
 noImplicitThis                          當 this 表達式值為 any 類型的時候，生成一個錯誤
 useUnknownInCatchVariables              默認 catch 子句變量為“未知”而不是“任何”。
 alwaysStrict                            以嚴格模式檢查每個 module，並在每個文件裡加入 'use strict'
+
+額外的檢查:
 noUnusedLocals                          有未使用的區域變數時，拋出錯誤
 noUnusedParameters                      有未使用的參數時，拋出錯誤
 exactOptionalPropertyTypes              將可選屬性類型解釋為書面形式，而不是添加“未定義”。

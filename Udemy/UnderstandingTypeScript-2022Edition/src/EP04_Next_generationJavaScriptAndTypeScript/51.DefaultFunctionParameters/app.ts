@@ -1,0 +1,1 @@
+const add51 = (a: number, b: number = 1) => a + b;
