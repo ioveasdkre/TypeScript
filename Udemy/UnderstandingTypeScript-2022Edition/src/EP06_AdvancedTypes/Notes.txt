@@ -1,0 +1,26 @@
+檢查類型的方式
+if ("屬性名稱" in 參數)        這是比較不好的方式 因為使用字串方式檢查 編輯器不會告訴你是否錯誤
+if (參數 instanceof 類型名稱)  檢查建構函數的屬性是否出現 prototype在對象的原型鏈中的任何位置 可以更靈活的使用聯合類型
+instanceof 範例詳細請參 84 85
+
+
+類型轉換可幫助你告訴 TypeScript前端 DOM所傳遞 值的型別
+const userInputElement86 = <HTMLInputElement>document.getElementById("user-input");
+const userInputElement86 = (document.getElementById("user-input"))! as HTMLInputElement; // 因 React使用第一種方式 可能與本身架構會造成衝突，固可使用 第二種方式
+userInputElement86.value = "Hi there!";
+if (userInputElement86) { // 第二種方式不加驚嘆號
+  (userInputElement86 as HTMLInputElement).value = "Hi there!";
+}
+
+as 類型名稱  型別斷言 告訴 TypeScript他的類型 一般使用於聯合型別的變數指定
+
+
+重載
+function add(a:string, b:string):string;
+function add(a:number, b:number): number;
+function add(a: any, b:any): any {
+    return a + b;
+}
+
+add("hello ", "Kira"); // "hello Kira" 
+add(1, 2); //  3 
