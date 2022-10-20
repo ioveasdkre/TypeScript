@@ -1,0 +1,3 @@
+泛型只存在於 TypeScript
+
+Partial<type> 建立一個所有屬性為可選的類型

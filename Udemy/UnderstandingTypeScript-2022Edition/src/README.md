@@ -4,3 +4,5 @@ EP03_TheTypeScriptCompiler_andItsConfiguration  TypeScript 編譯器（及其配
 EP04_Next_generationJavaScriptAndTypeScript     下一代 JavaScript TypeScript
 EP05_ClassesAndInterfaces                       類別和介面
 EP06_AdvancedTypes                              高級類型
+EP07_Generics                                   泛型
+EP08_Decorators                                 裝飾器
