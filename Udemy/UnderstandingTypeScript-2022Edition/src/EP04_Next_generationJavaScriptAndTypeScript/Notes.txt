@@ -1,0 +1,7 @@
+利用 解構達到傳遞多個參數
+const add53 = (...numbers: number[]) => {
+  // 將一個累加器及陣列中每項元素（由左至右）傳入回呼函式，將陣列化為單一值
+  return numbers.reduce((curResult, curValue) => {
+    return curResult + curValue;
+  }, 0);
+};

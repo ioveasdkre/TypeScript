@@ -1,0 +1,13 @@
+使用 裝飾器需先配置環境
+
+tsconfig.json
+target es6 以上(包含)版本
+experimentalDecorators true 啟動裝飾器
+
+
+@funName 裝飾器宣告在 class之前
+裝飾器的執行順序是由下而上
+
+
+PropertyDescriptor 屬性描述符
+constructor        建構子

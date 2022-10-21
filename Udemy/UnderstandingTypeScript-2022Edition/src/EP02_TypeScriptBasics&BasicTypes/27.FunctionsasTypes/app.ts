@@ -10,10 +10,10 @@ function printResult27(num: number): void {
 let combineValues27: Function;
 let combineValues272: (a: number, b: number) => number; // 宣告接收方法
 
-combineValues = add27;
+combineValues27 = add27;
 // combineValues = printResult27; // undefined
 combineValues272 = add27;
 // combineValues = 5; // Error
 
-console.log(combineValues(8, 8));
+console.log(combineValues27(8, 8));
 console.log(combineValues272(8, 8));

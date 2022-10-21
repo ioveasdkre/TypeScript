@@ -15,8 +15,8 @@ get         Getters 唯讀
 set         Setters 唯存
 
 方法
-super() // 傳遞資訊給父親(依照繼承對象建構子所需參數)
+super() 傳遞資訊給父親(依照繼承對象建構子所需參數)
 
 
 interface當作契約使用, class可以實作 並且遵守約定
-outputName?: string; // ?可選屬性
+outputName?: string;  ?可選屬性
