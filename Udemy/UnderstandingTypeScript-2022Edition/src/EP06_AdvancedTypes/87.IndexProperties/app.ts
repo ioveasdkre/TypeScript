@@ -5,7 +5,7 @@ const userInputElement87 = document.getElementById(
 userInputElement87.value = "Hi there!";
 
 if (userInputElement87) {
-  // 第二種方式不加驚嘆號
+  // 第二種方式 可不加驚嘆號
   (userInputElement87 as HTMLInputElement).value = "Hi there!";
 }
 

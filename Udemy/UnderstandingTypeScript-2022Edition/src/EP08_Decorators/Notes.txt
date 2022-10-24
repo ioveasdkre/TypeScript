@@ -5,9 +5,14 @@ target es6 以上(包含)版本
 experimentalDecorators true 啟動裝飾器
 
 
-@funName 裝飾器宣告在 class之前
+@funName 裝飾器宣告在 class or 屬性 or 方法之前
+function Required116(target: any, propName: string, descriptor: PropertyDescriptor) // 目標, 屬性名稱, 描述
 裝飾器的執行順序是由下而上
 
 
 PropertyDescriptor 屬性描述符
 constructor        建構子
+
+
+!!Object 反轉在反轉運算後的結果為 true or false 避免特別情況發生的錯誤
+object ?? any 當左邊的值為 null 或者 undefined 時，就返回右邊的值
