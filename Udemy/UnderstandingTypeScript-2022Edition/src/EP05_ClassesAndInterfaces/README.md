@@ -16,6 +16,6 @@
 78.OptionalParametersAndProperties          可選參數和屬性
 
 
-更多關於（JS）類：  https ://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+更多關於（JS）類：  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
 
-有關 TS 接口的更多信息：  https ://www.typescriptlang.org/docs/handbook/2/objects.html
+有關 TS 接口的更多信息：  https://www.typescriptlang.org/docs/handbook/2/objects.html

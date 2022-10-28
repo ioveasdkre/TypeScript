@@ -2,3 +2,6 @@ node_modules
 *.js
 *.js.map
 .vscode
+
+# 不要忽略
+!bs-config.js

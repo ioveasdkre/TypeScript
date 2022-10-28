@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ProjectManager</title>
+    <link rel="stylesheet" href="app.css" />
+    <!-- defer 由於背景載入、不打斷渲染及確保執行順序的特色
+        async 由於背景載入、載入完會馬上暫停 DOM解析(若尚未解析完的話)，並開始執行 JavaScript -->
+    <script
+      src="./dist/EP09_Practice_Time_Let_sBuild_A_Drag_DropProject/128.ManagingApplicationStateWithSingletons/app.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- 保存用戶端內容的機制。該內容在頁面載入時不受渲染，但可以在運行時使用 JavaScript 實例化 -->
+    <template id="project-input">
+      <form>
+        <div class="form-control">
+          <label for="title">Title</label>
+          <input type="text" id="title" />
+        </div>
+        <div class="form-control">
+          <label for="description">Description</label>
+          <textarea id="description" rows="3"></textarea>
+        </div>
+        <div class="form-control">
+          <label for="people">People</label>
+          <input type="number" id="people" step="1" min="0" max="10" />
+        </div>
+        <button type="submit">ADD PROJECT</button>
+      </form>
+    </template>
+    <template id="single-project">
+      <li></li>
+    </template>
+    <template id="project-list">
+      <section class="projects">
+        <header>
+          <h2></h2>
+        </header>
+        <ul></ul>
+      </section>
+    </template>
+    <div id="app"></div>
+  </body>
+</html>

@@ -1,29 +1,3 @@
-type Admin84 = {
-  name: string;
-  privileges: string[];
-};
-
-type Employee84 = {
-  name: string;
-  startDate: Date;
-};
-
-type UnknownEmployee84 = Employee84 | Admin84;
-
-type Combinable84 = string | number;
-
-function add84(a: Combinable84, b: Combinable84) {
-  if (typeof a === "string" || typeof b === "string")
-    return a.toString() + b.toString();
-  return a + b;
-}
-
-function printEmployeeInformation84(emp: UnknownEmployee84) {
-  console.log(`Name: ${emp.name}`);
-  if ("privileges" in emp) console.log(`privileges: ${emp.privileges}`); // 檢查類型為 privileges的輸出
-  if ("startDate" in emp) console.log(`start Date: ${emp.startDate}`); // 檢查類型為 startDate的輸出
-}
-
 class Car84 {
   drive() {
     console.log("Driving... ");
