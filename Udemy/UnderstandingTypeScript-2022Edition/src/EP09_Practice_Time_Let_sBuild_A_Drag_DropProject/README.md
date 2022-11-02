@@ -5,3 +5,11 @@
 126.CreatingARe_UsableValidationFunctionality 創建可重用的驗證功能
 127.RenderingProjectLists                     渲染項目列表
 128.ManagingApplicationStateWithSingletons    使用單例管理應用程序狀態
+129.MoreClassesAndCustomTypes                 更多類和自定義類型
+131.AddingInheritanceAndGenerics              添加繼承和泛型
+132.RenderingProjectItemsWithA_Class          使用類渲染項目項
+134.UtilizingInterfacesToImplementDragAndDrop 利用接口實現拖放
+136.AddingA_DroppableArea                     添加可放置區域
+
+
+HTML 拖放 API: https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API
