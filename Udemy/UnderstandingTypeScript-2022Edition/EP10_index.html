@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ProjectManager</title>
+    <link rel="stylesheet" href="app.css" />
+    <!-- type="module" src引用的 .js 就視為模組
+        async 由於背景載入、載入完會馬上暫停 DOM解析(若尚未解析完的話)，並開始執行 JavaScript -->
+    <!-- 因 章節中有使用 throw new Err 指生成一個檔案會有誤 故在此填寫 js  142執行請解開註解-->
+    <!-- <script
+      type="module"
+      src="./dist/EP10_ModulesAndNamespaces/142.WorkingWithNamespaces/decorator/autobind.js"
+    ></script>
+    <script
+      type="module"
+      src="./dist/EP10_ModulesAndNamespaces/142.WorkingWithNamespaces/models/drag-drop.js"
+    ></script>
+    <script
+      type="module"
+      src="./dist/EP10_ModulesAndNamespaces/142.WorkingWithNamespaces/models/project.js"
+    ></script>
+    <script
+      type="module"
+      src="./dist/EP10_ModulesAndNamespaces/142.WorkingWithNamespaces/state/project-state.js"
+    ></script>
+    <script
+      type="module"
+      src="./dist/EP10_ModulesAndNamespaces/142.WorkingWithNamespaces/util/validation.js"
+    ></script>
+    <script
+      type="module"
+      src="./dist/EP10_ModulesAndNamespaces/142.WorkingWithNamespaces/components/base-component.js"
+    ></script>
+    <script
+      type="module"
+      src="./dist/EP10_ModulesAndNamespaces/142.WorkingWithNamespaces/components/project-item.js"
+    ></script>
+    <script
+      type="module"
+      src="./dist/EP10_ModulesAndNamespaces/142.WorkingWithNamespaces/components/project-input.js"
+    ></script>
+    <script
+      type="module"
+      src="./dist/EP10_ModulesAndNamespaces/142.WorkingWithNamespaces/components/project-list.js"
+    ></script> -->
+    <!-- 因 章節中有使用 throw new Err 指生成一個檔案會有誤 故在此填寫 js  142執行請解開註解 End-->
+    <script
+      type="module"
+      src="./dist/EP10_ModulesAndNamespaces/146.UsingES_Modules/app.js"
+    ></script>
+  </head>
+  <body>
+    <!-- 保存用戶端內容的機制。該內容在頁面載入時不受渲染，但可以在運行時使用 JavaScript實例化 於容器中 例如： app -->
+    <template id="project-input">
+      <form>
+        <div class="form-control">
+          <label for="title">Title</label>
+          <input type="text" id="title" />
+        </div>
+        <div class="form-control">
+          <label for="description">Description</label>
+          <textarea id="description" rows="3"></textarea>
+        </div>
+        <div class="form-control">
+          <label for="people">People</label>
+          <input type="number" id="people" step="1" min="0" max="10" />
+        </div>
+        <button type="submit">ADD PROJECT</button>
+      </form>
+    </template>
+    <template id="single-project">
+      <!-- draggable 可拖曳的 請參 134範例-->
+      <li draggable="true">
+        <h2></h2>
+        <h3></h3>
+        <p></p>
+      </li>
+    </template>
+    <template id="project-list">
+      <section class="projects">
+        <header>
+          <h2></h2>
+        </header>
+        <ul></ul>
+      </section>
+    </template>
+    <div id="app"></div>
+  </body>
+</html>
