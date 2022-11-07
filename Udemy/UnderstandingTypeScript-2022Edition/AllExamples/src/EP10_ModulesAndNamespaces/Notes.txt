@@ -1,0 +1,19 @@
+namespace 命名空間, ts獨有
+
+ts導入 此為特殊用語只限 ts
+/// <reference path="drag-drop-interfaces.ts"/>
+並且利用同個命名空間的方式導入 參 142
+namespace App {}
+
+
+tsconfig.json可設定 ts全部輸出成一個 js
+outFile
+
+export  導出
+default 預設
+import  導入
+
+
+多個檔案導入 xx.js實際上只會導一次，並不會因為 import多次  而導入多次
+
+命名空間 or ES的方式管理程式碼 範例可參 components資料夾

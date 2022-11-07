@@ -1,0 +1,9 @@
+安裝環境
+npm install --save-dev webpack webpack-cli webpack-dev-server clean-webpack-plugin typescript ts-loade
+
+
+手動新增 webpack配置 採用 node.js語法
+webpack.config.js
+
+
+用來開發使用, 打包快速
