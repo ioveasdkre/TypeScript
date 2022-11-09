@@ -1,0 +1,2 @@
+裝飾器和非裝飾器的驗證
+npm install class-validator --save

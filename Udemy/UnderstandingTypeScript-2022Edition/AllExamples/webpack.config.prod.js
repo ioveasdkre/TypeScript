@@ -1,5 +1,4 @@
 const path = require("path");
-const CleanPlugin = require("clean-webpack-plugin");
 
 // node.js語法
 module.exports = {

@@ -9,3 +9,4 @@ EP08_Decorators                                   裝飾器
 EP09_Practice_Time_Let_sBuild_A_Drag_DropProject  練習時間讓我們建立一個拖放項目
 EP10_ModulesAndNamespaces                         模塊和命名空間
 EP11_UsingWebpackWithTypeScript                   使用帶有 TypeScript 的 Webpack
+EP12_3rdPartyLibrariesAndTypeScript               3rd Party Libraries & TypeScript

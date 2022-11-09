@@ -1,0 +1,10 @@
+lodash 一致性、模塊化、高性能的 JavaScript實用工具庫
+npm i --save lodash
+npm install --save-dev @types/lodash   ts支援庫 只需安裝在開發階段即可 因發布以後為 js
+
+
+如果使用的第三方庫 只為 JavaScript建構時 會發生錯誤 故需要轉成 typeScript 或安裝官方的 ts庫
+
+
+關鍵字搜尋 ts庫
+庫名稱 types  例如 lodash types

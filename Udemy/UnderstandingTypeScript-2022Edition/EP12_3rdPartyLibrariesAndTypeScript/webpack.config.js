@@ -1,19 +1,17 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path');
 
 module.exports = {
   mode: "development",
-  entry: "./src/app.ts",
+  entry: "./src/165.TypeScript_embracing_Class_Validator/app.ts",
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
     publicPath: "dist",
   },
-  devtool: "inline-source-map",
   module: {
     rules: [
       {
-        test: /\.ts$/,
+        test: /\.tsx?$/,
         use: "ts-loader",
         exclude: /node_modules/,
       },
@@ -22,11 +20,4 @@ module.exports = {
   resolve: {
     extensions: [".ts", ".js"],
   },
-  // 第三方套件
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: "首頁",
-      template: "EP12_index.html",
-    }),
-  ],
 };

@@ -1,0 +1,1 @@
+declare 宣告全域(用來告訴 ts在 html你所知道的)
