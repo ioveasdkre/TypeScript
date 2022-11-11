@@ -4,7 +4,7 @@ module.exports = {
     middleware: {
       // overrides the second middleware default with new settings
       1: require("connect-history-api-fallback")({
-        index: "./EP10_index.html",
+        index: "./EP13_index.html",
         verbose: true,
       }),
     },
