@@ -5,3 +5,6 @@ google map ts
 npm install --save @types/google.maps
 
 需自行註冊 google map 並更改 key才可啟用此範例
+
+
+此範例無法使用

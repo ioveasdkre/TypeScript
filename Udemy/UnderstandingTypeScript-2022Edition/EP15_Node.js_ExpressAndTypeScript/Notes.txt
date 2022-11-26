@@ -1,0 +1,2 @@
+tsc 檔名.js  ts轉 js
+node 檔名.js 執行 js

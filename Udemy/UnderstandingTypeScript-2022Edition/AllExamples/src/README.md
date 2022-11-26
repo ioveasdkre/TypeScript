@@ -12,3 +12,5 @@ EP10_ModulesAndNamespaces                                                   模�
 EP11_UsingWebpackWithTypeScript                                             使用帶有 TypeScript 的 Webpack
 EP12_3rdPartyLibrariesAndTypeScript                                         3rd Party Libraries & TypeScript
 EP13_TimeToPractice_LetsBuild_A_SelectAndShare_A_Place_App_incl_GoogleMaps) 是時候練習了！ 讓我們構建一個“選擇和分享地點”應用程序（包括谷歌地圖）
+EP14_ReactAndTypeScript														React 和 TypeScript
+EP15_Node.js_ExpressAndTypeScript											Node.js Express 和 TypeScript

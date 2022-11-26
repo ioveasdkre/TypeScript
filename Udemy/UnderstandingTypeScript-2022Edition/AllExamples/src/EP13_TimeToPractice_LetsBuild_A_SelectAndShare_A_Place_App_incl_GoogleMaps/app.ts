@@ -1,5 +1,3 @@
-import axios from "axios";
-
 const form = document.querySelector("form") as HTMLFormElement;
 const addressInput = document.getElementById("address") as HTMLInputElement;
 const GOOGLE_API_KEY = "AIzaSyCIaAc2c5M3VpbCH6PPq_guwy9lHuowXOs";

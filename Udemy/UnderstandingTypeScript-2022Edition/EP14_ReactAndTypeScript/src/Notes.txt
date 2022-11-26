@@ -1,0 +1,7 @@
+npx create-react-app . --template typescript 不須自己配置環境 類似於幫你配置好
+
+. 不創建資料夾 直接在當層建立專案
+
+tsx 副檔名類似 XML的標記性語言
+
+npm install --save react-router-dom 路由
