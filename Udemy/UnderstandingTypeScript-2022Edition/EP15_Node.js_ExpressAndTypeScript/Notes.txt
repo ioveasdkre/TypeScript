@@ -1,2 +1,17 @@
-tsc 檔名.js  ts轉 js
+tsc  檔名.ts ts轉 js
 node 檔名.js 執行 js
+node 檔名.ts 執行 ts, 此時會發生錯誤 因 Node無法直接運行 TypeScript(190範例)
+
+可安裝 ts-node可直接在 node上執行 TypeScript.js而無須編譯
+在 開發、生產、某些 Web Service、Web上提供服務.
+但這可能並不理想 因每次執行代碼都要執行此額外的編譯步驟
+在開發期間可接受這些額外的消耗.
+當你的代碼發布出去時 你可能不希望使用這些代碼(ts-node)
+
+此範例不會使用 ts-node也不會嘗試執行任何帶有 node的 TypeScript文件
+
+
+環境建置
+請參 tsconfig.json設定
+npm install --save express body-parser
+npm install --save-dev nodemon @types/node @types/express
