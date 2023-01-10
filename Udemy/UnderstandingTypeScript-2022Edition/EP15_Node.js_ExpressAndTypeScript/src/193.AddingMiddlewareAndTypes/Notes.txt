@@ -1,0 +1,4 @@
+執行專案
+npm start
+
+開啟 Postman並設定請參圖檔
